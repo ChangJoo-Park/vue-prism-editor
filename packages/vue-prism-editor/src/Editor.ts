@@ -265,6 +265,7 @@ export const PrismEditor = Vue.extend({
       // this.props.onValueChange(record.value);
     },
     handleChange(e: KeyboardEvent): void {
+      console.log('event => ', e.target)
       const { value, selectionStart, selectionEnd } = e.target as HTMLTextAreaElement;
 
       this._recordChange(
